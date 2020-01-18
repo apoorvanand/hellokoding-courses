@@ -19,7 +19,13 @@
         <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
     </c:if>
   </div>
+  <div class="container">
+    <form action="success" method="post" enctype="multipart/form-data">
+      <input type="file" name="KYC document Upload" id="fileToUpload">
+      <input type="submit" value="Submit Documents" name="submit">
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
 </html>
+

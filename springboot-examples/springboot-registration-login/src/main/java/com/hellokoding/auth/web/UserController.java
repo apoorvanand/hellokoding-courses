@@ -58,4 +58,10 @@ public class UserController {
     public String welcome(Model model) {
         return "welcome";
     }
+    @GetMapping({"/", "/success"})
+    public String success(Model model) {
+        return "success";
+    }
+
 }
+
